@@ -1,7 +1,8 @@
 //References
+const header = document.querySelector(".header");
 const addBtn = document.querySelector(".add-btn");
-const closeBtn = document.querySelector(".close-btn");
 const addForm = document.querySelector(".add-form");
+const closeBtn = document.querySelector(".close-btn");
 
 //Constants/Variables
 const myLibrary = [];
