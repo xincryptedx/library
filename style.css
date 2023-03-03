@@ -7,6 +7,14 @@
   --footer-bg-color: hsl(50, 100%, 50%);
 }
 
+* {
+  font: inherit;
+}
+
+.body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 .container {
   display: grid;
   grid-template: 150px min-content 6fr min-content / 1fr;
