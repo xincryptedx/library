@@ -80,6 +80,7 @@ body {
 
 .add-form.show {
   height: 50vh;
+  min-height: fit-content;
 }
 
 .content {
