@@ -96,7 +96,7 @@ body {
 .add-form.show {
   display: grid;
   grid-template: min-content 1fr min-content / 1fr;
-  height: 50vh;
+  height: min-content;
   padding: var(--container-children-padding);
 }
 
