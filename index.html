@@ -21,7 +21,7 @@
       </div>
       <div class="add-form">
         <button class="close-btn">-</button>
-        <form action="">
+        <form action="" id="add-book-form">
           <legend>New Book Info</legend>
           <label for="new-title"
             >Title: <input type="text" name="title" id="new-title"
@@ -37,7 +37,9 @@
             <input type="checkbox" name="has-read" id="new-has-read"
           /></label>
         </form>
-        <button class="submit-book-btn">Submit Book</button>
+        <button form="add-book-form" class="submit-book-btn">
+          Submit Book
+        </button>
       </div>
 
       <div class="content"></div>
