@@ -31,6 +31,18 @@
   background-color: var(--header-bg-color);
 }
 
+.header .title {
+  grid-area: title;
+}
+
+.header .total-books {
+  grid-area: total-books;
+}
+
+.header .book-search {
+  grid-area: search;
+}
+
 .header .add-btn {
   grid-area: add-btn;
   height: 90%;
