@@ -17,6 +17,8 @@ h3 {
   --form-bg-color: hsl(39, 47%, 94%);
   --content-bg-color: hsl(210, 4%, 71%);
   --footer-bg-color: hsl(260, 25%, 66%);
+
+  --container-children-padding: 5px 15px;
 }
 
 body {
@@ -48,7 +50,7 @@ body {
 
   background-color: var(--header-bg-color);
   color: var(--header-color);
-  padding: 5px 15px;
+  padding: var(--container-children-padding);
 }
 
 .header .title {
@@ -79,10 +81,17 @@ body {
 }
 
 .add-form.show {
-  height: 50vh;
-  min-height: fit-content;
   display: grid;
   grid-template: min-content 1fr min-content / 1fr;
+  height: 50vh;
+  min-height: fit-content;
+  padding: var(--container-children-padding);
+}
+
+.add-form .close-btn {
+  justify-self: end;
+  width: 100px;
+  height: 50px;
 }
 
 .content {
