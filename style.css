@@ -26,27 +26,32 @@
   grid-template-areas:
     "title total-books"
     "search add-btn";
+  align-items: center;
+
   background-color: var(--header-bg-color);
+  padding: 15px;
 }
 
 .header .title {
   grid-area: title;
+  margin: 0;
 }
 
 .header .total-books {
   grid-area: total-books;
+  justify-self: end;
 }
 
 .header .book-search {
   grid-area: search;
+  align-self: end;
 }
 
 .header .add-btn {
   grid-area: add-btn;
-  height: 90%;
   width: 80%;
-  justify-self: center;
-  align-self: center;
+  justify-self: end;
+  align-self: end;
 }
 
 .add-form {
