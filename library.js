@@ -26,10 +26,12 @@ function loadLibrary() {
 
 function showAddForm() {
   addForm.classList.add("show");
+  header.classList.add("hide");
 }
 
 function closeAddForm() {
   addForm.classList.remove("show");
+  header.classList.remove("hide");
 }
 
 //Event listeners
