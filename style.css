@@ -95,13 +95,14 @@ body {
 
 .add-form.show {
   display: grid;
-  grid-template: min-content repeat(5, 1fr) min-content / 1fr;
+  grid-template: min-content repeat(5, 1fr) min-content / min-content 1fr;
   gap: 15px;
   height: min-content;
   padding: var(--container-children-padding);
 }
 
 .add-form .close-btn {
+  grid-column: 1 / -1;
   justify-self: end;
   width: 100px;
   height: 50px;
@@ -109,6 +110,14 @@ body {
 
 .add-form form {
   display: contents;
+}
+
+.add-form form legend {
+  grid-column: 1 / -1;
+}
+
+.add-form .submit-book-btn {
+  grid-column: 1 / -1;
 }
 
 .content {
