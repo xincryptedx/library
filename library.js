@@ -27,5 +27,10 @@ function showAddForm() {
   addForm.classList.add("show");
 }
 
+function closeAddForm() {
+  addForm.classList.remove("show");
+}
+
 //Event listeners
 addBtn.addEventListener("click", showAddForm);
+closeBtn.addEventListener("click", closeAddForm);
