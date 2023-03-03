@@ -54,9 +54,16 @@ body {
 }
 
 .header.hide {
-  height: 0;
-  overflow: hidden;
-  padding: 0;
+  grid-template: 2fr 0 / 2fr 1fr;
+  grid-template-areas:
+    "title total-books"
+    "search add-btn";
+}
+
+.header.hide label,
+.header.hide input,
+.header.hide button {
+  display: none;
 }
 
 .header .title {
@@ -90,7 +97,6 @@ body {
   display: grid;
   grid-template: min-content 1fr min-content / 1fr;
   height: 50vh;
-  min-height: fit-content;
   padding: var(--container-children-padding);
 }
 
