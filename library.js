@@ -21,3 +21,10 @@ function addBookToLibrary(book) {
 function loadLibrary() {
   //Takes the info in library and displays it on the webpage
 }
+
+function showAddForm() {
+  addForm.classList.add("show");
+}
+
+//Event listeners
+addBtn.addEventListener("click", showAddForm);
