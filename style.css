@@ -9,7 +9,7 @@
 
 .container {
   display: grid;
-  grid-template: 15vh min-content 6fr min-content / 1fr;
+  grid-template: 150px min-content 6fr min-content / 1fr;
   grid-template-areas:
     "header"
     "add-form"
