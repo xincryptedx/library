@@ -1,5 +1,6 @@
 //References
 const addBtn = document.querySelector(".add-btn");
+const closeBtn = document.querySelector(".close-btn");
 const addForm = document.querySelector(".add-form");
 
 //Constants/Variables
