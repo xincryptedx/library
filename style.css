@@ -18,13 +18,15 @@
 
 .header {
     grid-area: header;
+    background-color: var(--header-bg-color);
 }
 
 .content {
     grid-area: content;
+    background-color: var(--content-bg-color);
 }
 
 .footer {
     grid-area: footer;
-
+    background-color: var(--footer-bg-color);
 }
