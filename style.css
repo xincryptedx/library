@@ -2,6 +2,7 @@
 
 :root {
   --header-bg-color: hsl(250, 100%, 50%);
+  --form-bg-color: hsl(110, 100%, 50%);
   --content-bg-color: hsl(150, 100%, 50%);
   --footer-bg-color: hsl(50, 100%, 50%);
 }
@@ -26,6 +27,7 @@
 .add-form {
   grid-area: add-form;
   overflow: hidden;
+  background-color: var(--form-bg-color);
 }
 
 .content {
