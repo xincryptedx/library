@@ -8,8 +8,9 @@
 
 .container {
     display: grid;
-    grid-template: 1fr 7fr min-content / 1fr;
+    grid-template: 1fr 0 7fr min-content / 1fr;
     grid-template-areas:    'header'
+                            'add-form'
                             'content'
                             'footer';
 
