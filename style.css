@@ -9,7 +9,7 @@
 
 .container {
   display: grid;
-  grid-template: 1fr 0 7fr min-content / 1fr;
+  grid-template: 1fr min-content 7fr min-content / 1fr;
   grid-template-areas:
     "header"
     "add-form"
@@ -28,6 +28,11 @@
   grid-area: add-form;
   overflow: hidden;
   background-color: var(--form-bg-color);
+  height: 0;
+}
+
+.add-form.show {
+  height: fit-content;
 }
 
 .content {
