@@ -21,8 +21,23 @@
       </div>
       <div class="add-form">
         <button class="close-btn">-</button>
-        <p>This is a form control!</p>
-        <p>And this is another one!</p>
+        <form action="">
+          <legend>New Book Info</legend>
+          <label for="new-title"
+            >Title: <input type="text" name="title" id="new-title"
+          /></label>
+          <label for="new-author"
+            >Author: <input type="text" name="author" id="new-author"
+          /></label>
+          <label for="new-pages"
+            >Pages: <input type="tel" name="pages" id="new-pages"
+          /></label>
+          <label for="new-has-read"
+            >Has been read?
+            <input type="checkbox" name="has-read" id="new-has-read"
+          /></label>
+        </form>
+        <button class="submit-book-btn">Submit Book</button>
       </div>
 
       <div class="content"></div>
