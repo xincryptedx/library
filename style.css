@@ -1,33 +1,39 @@
-@import './node_modules/normalize.css/normalize.css';
+@import "./node_modules/normalize.css/normalize.css";
 
 :root {
-    --header-bg-color: hsl(250, 100%, 50%);
-    --content-bg-color: hsl(150, 100%, 50%);
-    --footer-bg-color: hsl(50, 100%, 50%);
+  --header-bg-color: hsl(250, 100%, 50%);
+  --content-bg-color: hsl(150, 100%, 50%);
+  --footer-bg-color: hsl(50, 100%, 50%);
 }
 
 .container {
-    display: grid;
-    grid-template: 1fr 0 7fr min-content / 1fr;
-    grid-template-areas:    'header'
-                            'add-form'
-                            'content'
-                            'footer';
+  display: grid;
+  grid-template: 1fr 0 7fr min-content / 1fr;
+  grid-template-areas:
+    "header"
+    "add-form"
+    "content"
+    "footer";
 
-    height: 100vh;
+  height: 100vh;
 }
 
 .header {
-    grid-area: header;
-    background-color: var(--header-bg-color);
+  grid-area: header;
+  background-color: var(--header-bg-color);
+}
+
+.add-form {
+  grid-area: add-form;
+  overflow: hidden;
 }
 
 .content {
-    grid-area: content;
-    background-color: var(--content-bg-color);
+  grid-area: content;
+  background-color: var(--content-bg-color);
 }
 
 .footer {
-    grid-area: footer;
-    background-color: var(--footer-bg-color);
+  grid-area: footer;
+  background-color: var(--footer-bg-color);
 }
