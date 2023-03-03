@@ -21,6 +21,13 @@
 
 .header {
   grid-area: header;
+  display: grid;
+  grid-template: 2fr 2fr 3fr / 2fr 1fr;
+  grid-template-areas:
+    "title total-books"
+    "search search"
+    "add-btn add-btn";
+
   background-color: var(--header-bg-color);
 }
 
