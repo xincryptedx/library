@@ -106,6 +106,10 @@ body {
   height: 50px;
 }
 
+.add-form form {
+  display: contents;
+}
+
 .content {
   grid-area: content;
   background-color: var(--content-bg-color);
