@@ -1,10 +1,11 @@
 @import "./node_modules/normalize.css/normalize.css";
 
 :root {
-  --header-bg-color: hsl(250, 100%, 50%);
-  --form-bg-color: hsl(110, 100%, 50%);
-  --content-bg-color: hsl(150, 100%, 50%);
-  --footer-bg-color: hsl(50, 100%, 50%);
+  --header-bg-color: hsl(290, 87%, 20%);
+  --header-color: hsl(39, 47%, 94%);
+  --form-bg-color: hsl(39, 47%, 94%);
+  --content-bg-color: hsl(210, 4%, 71%);
+  --footer-bg-color: hsl(260, 25%, 66%);
 }
 
 * {
@@ -40,6 +41,7 @@ h3 {
   align-items: center;
 
   background-color: var(--header-bg-color);
+  color: var(--header-color);
   padding: 5px 15px;
 }
 
@@ -58,7 +60,8 @@ h3 {
 
 .header .add-btn {
   grid-area: add-btn;
-  width: 80%;
+  width: 100px;
+  height: 50px;
   justify-self: end;
 }
 
