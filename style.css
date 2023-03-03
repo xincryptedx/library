@@ -81,6 +81,8 @@ body {
 .add-form.show {
   height: 50vh;
   min-height: fit-content;
+  display: grid;
+  grid-template: min-content 1fr min-content / 1fr;
 }
 
 .content {
