@@ -53,6 +53,11 @@ body {
   padding: var(--container-children-padding);
 }
 
+.header.hide {
+  height: 0;
+  overflow: hidden;
+}
+
 .header .title {
   grid-area: title;
 }
