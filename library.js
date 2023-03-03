@@ -7,8 +7,8 @@ function Book({title = '', author = '', pages = 0, hasRead = false}) {
     this.hasRead = hasRead;
 }
 
-function addBookToLibrary() {
-    //Adds a new Book to the myLibrary array
+function addBookToLibrary(book) {
+    myLibrary.push(book);
 }
 
 function loadLibrary() {
