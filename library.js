@@ -1,5 +1,6 @@
 //References
 const addBtn = document.querySelector(".add-btn");
+const addForm = document.querySelector(".add-form");
 
 //Constants/Variables
 const myLibrary = [];
