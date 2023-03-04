@@ -1,7 +1,12 @@
 //References
 const header = document.querySelector(".header");
 const addBtn = document.querySelector(".add-btn");
+
 const addForm = document.querySelector(".add-form");
+const titleInput = document.querySelector("input.title");
+const authorInput = document.querySelector("input.author");
+const pagesInput = document.querySelector("input.pages");
+const hasReadInput = document.querySelector("input.has-read");
 const closeBtn = document.querySelector(".close-btn");
 const submitBookBtn = document.querySelector(".submit-book-btn");
 
