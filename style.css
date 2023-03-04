@@ -95,12 +95,12 @@ body {
 
 .add-form.show {
   display: grid;
-  grid-template: min-content repeat(2, 1fr) 1.5fr min-content / 15ch 1fr 15ch 1fr;
+  grid-template: min-content repeat(2, 1fr) 1.5fr min-content / min-content 30% min-content 1fr;
   grid-template-areas:
     "legend legend close-btn close-btn"
     "title-lab title title title"
     "author-lab author author author"
-    "pages-lab pages has-read has-read"
+    "pages-lab pages has-read-lab has-read"
     "submit-btn submit-btn submit-btn submit-btn";
   align-items: center;
   gap: 15px;
@@ -141,6 +141,10 @@ body {
 .add-form input.pages {
   grid-area: pages;
   width: 8ch;
+}
+
+.add-form label.has-read {
+  grid-area: has-read-lab;
 }
 
 .add-form .has-read {
