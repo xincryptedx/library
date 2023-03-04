@@ -98,7 +98,7 @@ body {
   grid-template: min-content repeat(4, 1fr) min-content / 15ch 1fr;
   grid-template-areas:
     "legend close-btn"
-    ". ." ". ." ". ." ". ."
+    ". ." ". ." ". ." ". custom-checkbox"
     "submit-btn submit-btn";
   gap: 15px;
   height: min-content;
@@ -125,6 +125,15 @@ body {
 
 .add-form input[type="tel"] {
   width: 8ch;
+}
+
+.add-form input[type="checkbox"] {
+  grid-area: custom-checkbox;
+  display: none;
+}
+
+.add-form .custom-checkbox {
+  grid-area: custom-checkbox;
 }
 
 .add-form .submit-book-btn {
