@@ -3,6 +3,7 @@ const header = document.querySelector(".header");
 const addBtn = document.querySelector(".add-btn");
 
 const addFormDiv = document.querySelector(".add-form");
+const addForm = document.querySelector(".add-form form");
 const titleInput = document.querySelector("input.title");
 const authorInput = document.querySelector("input.author");
 const pagesInput = document.querySelector("input.pages");
@@ -47,10 +48,10 @@ addBtn.addEventListener("click", showAddForm);
 closeBtn.addEventListener("click", closeAddForm);
 submitBookBtn.addEventListener("click", (e) => {
   e.preventDefault();
-  if (addFormDiv.checkValidity()) {
+  if (addForm.checkValidity()) {
     //Validate input further with JS
   } else {
-    addFormDiv.reportValidity();
+    addForm.reportValidity();
   }
   //Create object
   //Call addBook
