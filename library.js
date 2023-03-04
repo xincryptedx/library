@@ -11,6 +11,8 @@ const hasReadInput = document.querySelector("input.has-read");
 const closeBtn = document.querySelector(".close-btn");
 const submitBookBtn = document.querySelector(".submit-book-btn");
 
+const contentDiv = document.querySelector(".content");
+
 //Constants/Variables
 const myLibrary = [];
 
@@ -28,7 +30,27 @@ function addBookToLibrary(book) {
 }
 
 function loadLibrary() {
-  //Takes the info in library and displays it on the webpage
+  myLibrary.forEach((book) => {
+    const newBookDiv = document.createElement("div");
+    newBookDiv.classList.add("book");
+    contentDiv.appendChild(newBookDiv);
+
+    const newTitleDiv = document.createElement("div");
+    newTitleDiv.classList.add("title");
+    newTitleDiv.innerHTML = book.title;
+
+    newBookDiv.appendChild(newTitleDiv);
+
+    const newAuthorDiv = document.createElement("div");
+    newAuthorDiv.classList.add("author");
+    newAuthorDiv.innerHTML = book.author;
+    newBookDiv.appendChild(newAuthorDiv);
+
+    const newPagesDiv = document.createElement("div");
+    newPagesDiv.classList.add("pages");
+    newPagesDiv.innerHTML = book.pages;
+    newBookDiv.appendChild(newPagesDiv);
+  });
 }
 
 function showAddForm() {
