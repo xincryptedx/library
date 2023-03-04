@@ -218,7 +218,11 @@ input:checked + .slider:before {
 
 .content {
   grid-area: content;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(10rem, 100%), 1fr));
+
   background-color: var(--content-bg-color);
+  padding: var(--container-children-padding);
 }
 
 .footer {
