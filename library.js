@@ -50,6 +50,25 @@ function loadLibrary() {
     newPagesDiv.classList.add("pages");
     newPagesDiv.innerHTML = book.pages;
     newBookDiv.appendChild(newPagesDiv);
+
+    const newHasReadLabel = document.createElement("div");
+    newHasReadLabel.classList.add("has-read");
+    newHasReadLabel.innerHTML = "Already Read?";
+    newBookDiv.appendChild(newHasReadLabel);
+
+    const newHasReadSwitch = document.createElement("label");
+    newHasReadSwitch.classList.add("switch");
+    newBookDiv.appendChild(newHasReadSwitch);
+
+    const newHasReadCheckbox = document.createElement("input");
+    newHasReadCheckbox.classList.add("has-read");
+    newHasReadCheckbox.setAttribute("type", "checkbox");
+    newHasReadCheckbox.checked = book.hasRead;
+    newHasReadSwitch.appendChild(newHasReadCheckbox);
+
+    const newHasReadSpan = document.createElement("span");
+    newHasReadSpan.classList.add("slider");
+    newHasReadSwitch.appendChild(newHasReadSpan);
   });
 }
 
