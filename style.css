@@ -132,7 +132,9 @@ body {
 }
 
 .add-form input[type="checkbox"] {
-  display: none;
+  height: 0;
+  width: 0;
+  opacity: 0;
   grid-area: custom-checkbox;
 }
 
