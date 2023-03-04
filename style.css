@@ -123,6 +123,10 @@ body {
   height: 50px;
 }
 
+.add-form input[type="tel"] {
+  width: 8ch;
+}
+
 .add-form .submit-book-btn {
   grid-area: submit-btn;
 }
