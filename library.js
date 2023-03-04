@@ -2,7 +2,7 @@
 const header = document.querySelector(".header");
 const addBtn = document.querySelector(".add-btn");
 
-const addForm = document.querySelector(".add-form");
+const addFormDiv = document.querySelector(".add-form");
 const titleInput = document.querySelector("input.title");
 const authorInput = document.querySelector("input.author");
 const pagesInput = document.querySelector("input.pages");
@@ -31,21 +31,27 @@ function loadLibrary() {
 }
 
 function showAddForm() {
-  addForm.classList.add("show");
+  addFormDiv.classList.add("show");
   header.classList.add("hide");
 }
 
 function closeAddForm() {
-  addForm.classList.remove("show");
+  addFormDiv.classList.remove("show");
   header.classList.remove("hide");
 }
+
+function validateAddForm() {}
 
 //Event listeners
 addBtn.addEventListener("click", showAddForm);
 closeBtn.addEventListener("click", closeAddForm);
 submitBookBtn.addEventListener("click", (e) => {
   e.preventDefault();
-  //Validate input
+  if (addFormDiv.checkValidity()) {
+    //Validate input further with JS
+  } else {
+    addFormDiv.reportValidity();
+  }
   //Create object
   //Call addBook
 });
