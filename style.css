@@ -143,6 +143,14 @@ body {
   width: 8ch;
 }
 
+.add-form label.author {
+  grid-area: author-lab;
+}
+
+.add-form input.author {
+  grid-area: author;
+}
+
 .add-form label.has-read {
   grid-area: has-read-lab;
 }
