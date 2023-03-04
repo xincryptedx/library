@@ -3,6 +3,7 @@ const header = document.querySelector(".header");
 const addBtn = document.querySelector(".add-btn");
 const addForm = document.querySelector(".add-form");
 const closeBtn = document.querySelector(".close-btn");
+const submitBookBtn = document.querySelector(".submit-book-btn");
 
 //Constants/Variables
 const myLibrary = [];
@@ -37,3 +38,9 @@ function closeAddForm() {
 //Event listeners
 addBtn.addEventListener("click", showAddForm);
 closeBtn.addEventListener("click", closeAddForm);
+submitBookBtn.addEventListener("click", (e) => {
+  e.preventDefault();
+  //Validate input
+  //Create object
+  //Call addBook
+});
