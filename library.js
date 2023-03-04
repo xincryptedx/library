@@ -53,7 +53,7 @@ submitBookBtn.addEventListener("click", (e) => {
       pages: pagesInput.value,
       hasRead: hasReadInput.checked,
     });
-    //Call addBook
+    addBookToLibrary(newBook);
   } else {
     addForm.reportValidity();
   }
