@@ -41,16 +41,18 @@ function closeAddForm() {
   header.classList.remove("hide");
 }
 
-function validateAddForm() {}
-
 //Event listeners
 addBtn.addEventListener("click", showAddForm);
 closeBtn.addEventListener("click", closeAddForm);
 submitBookBtn.addEventListener("click", (e) => {
   e.preventDefault();
   if (addForm.checkValidity()) {
-    //Validate input further with JS
-    //Create object
+    const newBook = new Book({
+      title: titleInput.value,
+      author: authorInput.value,
+      pages: pagesInput.value,
+      hasRead: hasReadInput.checked,
+    });
     //Call addBook
   } else {
     addForm.reportValidity();
