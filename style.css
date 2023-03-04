@@ -127,9 +127,13 @@ body {
   width: 8ch;
 }
 
-.add-form input[type="checkbox"] {
+.add-form .has-read-switch {
   grid-area: custom-checkbox;
+}
+
+.add-form input[type="checkbox"] {
   display: none;
+  grid-area: custom-checkbox;
 }
 
 .add-form .custom-checkbox {
