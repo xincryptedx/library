@@ -95,14 +95,13 @@ body {
 
 .add-form.show {
   display: grid;
-  grid-template: min-content repeat(3, 1fr) 1.5fr min-content / 15ch 1fr;
+  grid-template: min-content repeat(2, 1fr) 1.5fr min-content / 15ch 1fr 15ch 1fr;
   grid-template-areas:
-    "legend close-btn"
-    ". ."
-    ". ."
-    ". ."
-    ". custom-checkbox"
-    "submit-btn submit-btn";
+    "legend legend close-btn close-btn"
+    "title-lab title title title"
+    "author-lab author author author"
+    "pages-lab pages has-read has-read"
+    "submit-btn submit-btn submit-btn submit-btn";
   align-items: center;
   gap: 15px;
   height: min-content;
@@ -127,23 +126,36 @@ body {
   height: 50px;
 }
 
-.add-form input[type="tel"] {
+.add-form label.title {
+  grid-area: title-lab;
+}
+
+.add-form input.title {
+  grid-area: title;
+}
+
+.add-form label.pages {
+  grid-area: pages-lab;
+}
+
+.add-form input.pages {
+  grid-area: pages;
   width: 8ch;
 }
 
-.add-form .has-read-switch {
-  grid-area: custom-checkbox;
+.add-form .has-read {
+  grid-area: has-read;
 }
 
 .add-form input[type="checkbox"] {
   height: 0;
   width: 0;
   opacity: 0;
-  grid-area: custom-checkbox;
+  grid-area: has-read;
 }
 
 .add-form .switch {
-  grid-area: custom-checkbox;
+  grid-area: has-read;
   position: relative;
   display: inline-block;
   width: 60px;
