@@ -98,7 +98,10 @@ body {
   grid-template: min-content repeat(3, 1fr) 1.5fr min-content / 15ch 1fr;
   grid-template-areas:
     "legend close-btn"
-    ". ." ". ." ". ." ". custom-checkbox"
+    ". ."
+    ". ."
+    ". ."
+    ". custom-checkbox"
     "submit-btn submit-btn";
   align-items: center;
   gap: 15px;
