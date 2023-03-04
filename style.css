@@ -111,6 +111,9 @@ body {
 
 .add-form form legend {
   grid-area: legend;
+  font-size: 1.15rem;
+  font-weight: bold;
+  align-self: end;
 }
 
 .add-form .close-btn {
