@@ -31,6 +31,7 @@
             id="new-title"
             class="title"
             required
+            maxlength="64"
           />
           <label for="new-author" class="author">Author: </label>
           <input
@@ -39,6 +40,7 @@
             id="new-author"
             class="author"
             required
+            maxlength="64"
           />
           <label for="new-pages" class="pages">Pages: </label>
           <input
@@ -46,7 +48,9 @@
             name="pages"
             id="new-pages"
             class="pages"
+            pattern="^\d{1,6}$"
             required
+            maxlength="6"
           />
           <label for="new-has-read" class="has-read">Already Read?</label>
           <label class="switch">

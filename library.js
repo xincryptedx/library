@@ -50,9 +50,9 @@ submitBookBtn.addEventListener("click", (e) => {
   e.preventDefault();
   if (addForm.checkValidity()) {
     //Validate input further with JS
+    //Create object
+    //Call addBook
   } else {
     addForm.reportValidity();
   }
-  //Create object
-  //Call addBook
 });
