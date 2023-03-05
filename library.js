@@ -36,10 +36,6 @@ Book.prototype.generateUniqueId = function generateUniqueId() {
 };
 
 //Functions
-function addBookToLibrary(book) {
-  myLibrary.push(book);
-}
-
 function removeBookFromLibrary(book, bookDiv) {
   const bookIndex = myLibrary.indexOf(book);
   if (bookIndex !== -1) {
@@ -103,6 +99,11 @@ function loadLibrary() {
       removeBookFromLibrary(book, newBookDiv)
     );
   });
+}
+
+function addBookToLibrary(book) {
+  myLibrary.push(book);
+  loadLibrary();
 }
 
 function showAddForm() {
