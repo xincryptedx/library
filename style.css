@@ -285,4 +285,7 @@ body {
 .footer {
   grid-area: footer;
   background-color: var(--footer-bg-color);
+  display: flex;
+  justify-content: center;
+  align-content: center;
 }
