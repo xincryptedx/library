@@ -277,6 +277,10 @@ body {
   grid-area: read-switch;
 }
 
+.content .book .remove-btn {
+  grid-area: remove-btn;
+}
+
 .footer {
   grid-area: footer;
   background-color: var(--footer-bg-color);
