@@ -259,6 +259,7 @@ body {
 
   background-color: var(--book-bg-color);
   padding: var(--container-children-padding);
+  border-radius: 15px;
 }
 
 .content .book .title {
