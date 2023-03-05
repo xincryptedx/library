@@ -52,6 +52,7 @@ function loadLibrary() {
   myLibrary.forEach((book) => {
     const newBookDiv = document.createElement("div");
     newBookDiv.classList.add("book");
+    newBookDiv.setAttribute("data-bookId", book.id);
     contentDiv.appendChild(newBookDiv);
 
     const newTitleDiv = document.createElement("div");
