@@ -25,7 +25,7 @@ h3 {
   /*Custom checkbox slider*/
   --switch-transition-time: 0.4s;
   --form-switch-width: 60px;
-  --form-switch-height: 36px;
+  --form-switch-height: 30px;
   --form-switch-padding: 10px;
   --slider-start-position: 4px;
 }
@@ -77,15 +77,9 @@ input:focus + .slider {
 }
 
 input:checked + .slider:before {
-  -webkit-transform: translateX(
-    calc(var(--form-switch-height) - var(--form-switch-padding))
-  );
-  -ms-transform: translateX(
-    calc(var(--form-switch-height) - var(--form-switch-padding))
-  );
-  transform: translateX(
-    calc(var(--form-switch-height) - var(--form-switch-padding))
-  );
+  -webkit-transform: translateX(calc(var(--form-switch-width) / 2));
+  -ms-transform: translateX(calc(var(--form-switch-width) / 2));
+  transform: translateX(calc(var(--form-switch-width) / 2));
 }
 
 body {
