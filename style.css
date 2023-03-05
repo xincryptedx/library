@@ -269,6 +269,10 @@ body {
   grid-area: pages;
 }
 
+.content .book label.has-read {
+  grid-area: read-label;
+}
+
 .content .book .switch {
   grid-area: read-switch;
 }
