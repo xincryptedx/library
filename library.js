@@ -51,13 +51,9 @@ function loadLibrary() {
     newPagesDiv.innerHTML = book.pages;
     newBookDiv.appendChild(newPagesDiv);
 
-    const newHasReadLabel = document.createElement("div");
-    newHasReadLabel.classList.add("has-read");
-    newHasReadLabel.innerHTML = "Already Read?";
-    newBookDiv.appendChild(newHasReadLabel);
-
     const newHasReadSwitch = document.createElement("label");
     newHasReadSwitch.classList.add("switch");
+    newHasReadSwitch.innerHTML = "Read?";
     newBookDiv.appendChild(newHasReadSwitch);
 
     const newHasReadCheckbox = document.createElement("input");
