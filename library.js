@@ -70,6 +70,10 @@ function loadLibrary() {
     const newHasReadSpan = document.createElement("span");
     newHasReadSpan.classList.add("slider");
     newHasReadSwitch.appendChild(newHasReadSpan);
+
+    const newRemoveButton = document.createElement("button");
+    newRemoveButton.classList.add("remove-btn");
+    newBookDiv.appendChild(newRemoveButton);
   });
 }
 
