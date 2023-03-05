@@ -51,6 +51,12 @@ function loadLibrary() {
     newPagesDiv.innerHTML = book.pages;
     newBookDiv.appendChild(newPagesDiv);
 
+    const newHasReadLabel = document.createElement("label");
+    /*newHasReadLabel.setAttribute("for", ) not sure how to do this yet bc id's are unique*/
+    newHasReadLabel.classList.add("has-read");
+    newHasReadLabel.innerHTML = "Read?";
+    newBookDiv.appendChild(newHasReadLabel);
+
     const newHasReadSwitch = document.createElement("label");
     newHasReadSwitch.classList.add("switch");
     newBookDiv.appendChild(newHasReadSwitch);
