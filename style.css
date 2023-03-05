@@ -159,7 +159,7 @@ body {
   grid-area: has-read;
 }
 
-input[type="checkbox"] {
+.add-form input[type="checkbox"] {
   height: 0;
   width: 0;
   opacity: 0;
