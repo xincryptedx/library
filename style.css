@@ -18,6 +18,7 @@ h3 {
   --header-color: hsl(39, 47%, 94%);
   --form-bg-color: hsl(39, 47%, 94%);
   --content-bg-color: hsl(210, 4%, 71%);
+  --book-bg-color: hsl(39, 47%, 94%);
   --footer-bg-color: hsl(260, 25%, 66%);
 
   --container-children-padding: 5px 15px;
@@ -239,7 +240,7 @@ body {
   grid-area: content;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(min(10rem, 100%), 1fr));
-
+  gap: 15px;
   background-color: var(--content-bg-color);
   padding: var(--container-children-padding);
 }
@@ -252,6 +253,8 @@ body {
     "author author"
     "pages read-label"
     "remove-btn read-switch";
+
+  background-color: var(--book-bg-color);
 }
 
 .content .book .title {
