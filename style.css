@@ -24,11 +24,11 @@ h3 {
 
   /*Custom checkbox slider*/
   --switch-transition-time: 0.4s;
-  --form-switch-width: 60px;
-  --form-switch-height: 20px;
-  --form-switch-padding: 5px; /*position needs some work. Maybe use calc to determine them?*/
-  --slider-start-position-left: 7px;
-  --slider-start-postition-bottom: 3px;
+  --form-switch-width: 40px; /*Needs to be wider than tall*/
+  --form-switch-height: 20px; /*Use even numbers*/
+  --form-switch-padding: 6px; /*Keep this an even number*/
+  --slider-start-position-left: 3px; /*keep start positions as 1/2 of padding for even look*/
+  --slider-start-postition-bottom: 3px; /*Can change but will result in non-centered slider*/
 }
 
 /*Checkbox styling*/
