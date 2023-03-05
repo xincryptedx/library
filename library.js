@@ -53,7 +53,6 @@ function loadLibrary() {
 
     const newHasReadSwitch = document.createElement("label");
     newHasReadSwitch.classList.add("switch");
-    newHasReadSwitch.innerHTML = "Read?";
     newBookDiv.appendChild(newHasReadSwitch);
 
     const newHasReadCheckbox = document.createElement("input");
