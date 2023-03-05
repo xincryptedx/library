@@ -26,7 +26,8 @@ h3 {
   --switch-transition-time: 0.4s;
   --form-switch-width: 60px;
   --form-switch-height: 20px;
-  --form-switch-offset: 5px; /*Offset and position need some work. Maybe use calc to determine them?*/
+  --form-switch-padding-top: 5px; /*Offset and position need some work. Maybe use calc to determine them?*/
+  --form-switch-padding-left: 5px;
   --slider-start-position: 4px;
 }
 
@@ -59,8 +60,8 @@ input[type="checkbox"] {
 .slider:before {
   position: absolute;
   content: "";
-  height: calc(var(--form-switch-height) - var(--form-switch-offset));
-  width: calc(var(--form-switch-height) - var(--form-switch-offset));
+  height: calc(var(--form-switch-height) - var(--form-switch-padding-top));
+  width: calc(var(--form-switch-height) - var(--form-switch-padding-left));
   left: var(--slider-start-position);
   bottom: var(--slider-start-position);
   background-color: white;
