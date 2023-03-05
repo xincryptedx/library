@@ -12,6 +12,8 @@ const closeBtn = document.querySelector(".close-btn");
 const submitBookBtn = document.querySelector(".submit-book-btn");
 
 const contentDiv = document.querySelector(".content");
+const removeBtns = [];
+removeBtns.push(...document.querySelectorAll(".remove-btn"));
 
 //Constants/Variables
 const myLibrary = [];
@@ -27,6 +29,10 @@ function Book({ title = "", author = "", pages = 0, hasRead = false }) {
 //Functions
 function addBookToLibrary(book) {
   myLibrary.push(book);
+}
+
+function removeBookFromLibrary() {
+  console.log("Removing book...");
 }
 
 function loadLibrary() {
@@ -74,6 +80,7 @@ function loadLibrary() {
     const newRemoveButton = document.createElement("button");
     newRemoveButton.classList.add("remove-btn");
     newBookDiv.appendChild(newRemoveButton);
+    removeBtns.push(newRemoveButton);
   });
 }
 
