@@ -22,6 +22,8 @@ function Book({ title = "", author = "", pages = 0, hasRead = false }) {
   this.author = author;
   this.pages = pages;
   this.hasRead = hasRead;
+  this.id =
+    Date.now().toString(36) + Math.random().toString(36).substring(2, 5);
 }
 
 //Functions
