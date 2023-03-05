@@ -256,6 +256,7 @@ body {
     "pages read-label"
     "remove-btn read-switch";
   align-items: center;
+  align-content: center;
 
   background-color: var(--book-bg-color);
   padding: var(--container-children-padding);
