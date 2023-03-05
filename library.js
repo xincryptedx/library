@@ -12,8 +12,6 @@ const closeBtn = document.querySelector(".close-btn");
 const submitBookBtn = document.querySelector(".submit-book-btn");
 
 const contentDiv = document.querySelector(".content");
-const removeBtns = [];
-removeBtns.push(...document.querySelectorAll(".remove-btn"));
 
 //Constants/Variables
 const myLibrary = [];
@@ -80,7 +78,7 @@ function loadLibrary() {
     const newRemoveButton = document.createElement("button");
     newRemoveButton.classList.add("remove-btn");
     newBookDiv.appendChild(newRemoveButton);
-    removeBtns.push(newRemoveButton);
+    newRemoveButton.addEventListener("click", () => removeBookFromLibrary);
   });
 }
 
