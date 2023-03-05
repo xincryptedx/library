@@ -255,16 +255,22 @@ body {
     "author author"
     "pages read-label"
     "remove-btn read-switch";
+  align-items: center;
 
   background-color: var(--book-bg-color);
+  padding: var(--container-children-padding);
 }
 
 .content .book .title {
   grid-area: title;
+  border-bottom: 1px solid black;
+  align-self: end;
 }
 
 .content .book .author {
   grid-area: author;
+  font-size: 0.9rem;
+  font-style: italic;
 }
 
 .content .book .pages {
