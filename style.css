@@ -25,8 +25,8 @@ h3 {
   /*Custom checkbox slider*/
   --switch-transition-time: 0.4s;
   --form-switch-width: 60px;
-  --form-switch-height: 30px;
-  --form-switch-padding: 10px;
+  --form-switch-height: 20px;
+  --form-switch-offset: 5px; /*Offset and position need some work. Maybe use calc to determine them?*/
   --slider-start-position: 4px;
 }
 
@@ -59,8 +59,8 @@ input[type="checkbox"] {
 .slider:before {
   position: absolute;
   content: "";
-  height: calc(var(--form-switch-height) - var(--form-switch-padding));
-  width: calc(var(--form-switch-height) - var(--form-switch-padding));
+  height: calc(var(--form-switch-height) - var(--form-switch-offset));
+  width: calc(var(--form-switch-height) - var(--form-switch-offset));
   left: var(--slider-start-position);
   bottom: var(--slider-start-position);
   background-color: white;
