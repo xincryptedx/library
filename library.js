@@ -78,7 +78,7 @@ function loadLibrary() {
     const newRemoveButton = document.createElement("button");
     newRemoveButton.classList.add("remove-btn");
     newBookDiv.appendChild(newRemoveButton);
-    newRemoveButton.addEventListener("click", () => removeBookFromLibrary);
+    newRemoveButton.addEventListener("click", () => removeBookFromLibrary());
   });
 }
 
