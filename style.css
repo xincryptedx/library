@@ -244,6 +244,32 @@ body {
   padding: var(--container-children-padding);
 }
 
+.content .book {
+  display: grid;
+  grid-template: repeat(4, minmax(min-content, 4vh)) / 1fr 1fr;
+  grid-template-areas:
+    "title title"
+    "author author"
+    "pages read-label"
+    "remove-btn read-switch";
+}
+
+.content .book .title {
+  grid-area: title;
+}
+
+.content .book .author {
+  grid-area: author;
+}
+
+.content .book .pages {
+  grid-area: pages;
+}
+
+.content .book .switch {
+  grid-area: read-switch;
+}
+
 .footer {
   grid-area: footer;
   background-color: var(--footer-bg-color);
