@@ -29,8 +29,12 @@ function addBookToLibrary(book) {
   myLibrary.push(book);
 }
 
-function removeBookFromLibrary() {
-  console.log("Removing book...");
+function removeBookFromLibrary(book, bookDiv) {
+  const bookIndex = myLibrary.indexOf(book);
+  if (bookIndex !== -1) {
+    myLibrary.splice(bookIndex, 1);
+    bookDiv.remove();
+  }
 }
 
 function loadLibrary() {
@@ -78,7 +82,9 @@ function loadLibrary() {
     const newRemoveButton = document.createElement("button");
     newRemoveButton.classList.add("remove-btn");
     newBookDiv.appendChild(newRemoveButton);
-    newRemoveButton.addEventListener("click", () => removeBookFromLibrary());
+    newRemoveButton.addEventListener("click", () =>
+      removeBookFromLibrary(book, newBookDiv)
+    );
   });
 }
 
