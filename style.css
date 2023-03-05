@@ -1,3 +1,4 @@
+/*Reset stuff*/
 @import "./normalize.css";
 
 * {
@@ -11,6 +12,7 @@ h3 {
   margin: 0;
 }
 
+/*Variables*/
 :root {
   --header-bg-color: hsl(290, 87%, 20%);
   --header-color: hsl(39, 47%, 94%);
@@ -19,6 +21,13 @@ h3 {
   --footer-bg-color: hsl(260, 25%, 66%);
 
   --container-children-padding: 5px 15px;
+}
+
+/*Checkbox styling*/
+input[type="checkbox"] {
+  height: 0;
+  width: 0;
+  opacity: 0;
 }
 
 body {
@@ -160,9 +169,6 @@ body {
 }
 
 .add-form input[type="checkbox"] {
-  height: 0;
-  width: 0;
-  opacity: 0;
   grid-area: has-read;
 }
 
