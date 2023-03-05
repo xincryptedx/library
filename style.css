@@ -243,6 +243,7 @@ body {
   gap: 15px;
   background-color: var(--content-bg-color);
   padding: var(--container-children-padding);
+  overflow: scroll;
 }
 
 .content .book {
