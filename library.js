@@ -50,6 +50,11 @@ function removeBookFromLibrary(book, bookDiv) {
 
 function loadLibrary() {
   myLibrary.forEach((book) => {
+    const bookDiv = document.querySelector(`[data-bookid="${book.id}"]`);
+    if (bookDiv) {
+      return;
+    }
+
     const newBookDiv = document.createElement("div");
     newBookDiv.classList.add("book");
     newBookDiv.setAttribute("data-bookId", book.id);
