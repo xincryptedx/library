@@ -69,7 +69,7 @@ function loadLibrary() {
 
     const newPagesDiv = document.createElement("div");
     newPagesDiv.classList.add("pages");
-    newPagesDiv.innerHTML = book.pages;
+    newPagesDiv.innerHTML = `Pages: ${book.pages}`;
     newBookDiv.appendChild(newPagesDiv);
 
     const newHasReadLabel = document.createElement("label");
