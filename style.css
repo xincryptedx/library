@@ -30,6 +30,8 @@ h3 {
   --form-switch-padding: 6px; /*Keep this an even number*/
   --slider-start-position-left: 3px; /*keep start positions as 1/2 of padding for even look*/
   --slider-start-postition-bottom: 3px; /*Can change but will result in non-centered slider*/
+
+  --book-box-shadow: 2px 2px 2px 2px grey;
 }
 
 /*Checkbox styling*/
@@ -261,6 +263,7 @@ body {
   background-color: var(--book-bg-color);
   padding: var(--container-children-padding);
   border-radius: 15px;
+  box-shadow: var(--book-box-shadow);
 }
 
 .content .book .title {
@@ -293,6 +296,8 @@ body {
   grid-area: remove-btn;
   height: 25px;
   width: 25px;
+  border-radius: 5px;
+  border: none;
   align-self: end;
   justify-self: start;
 }
