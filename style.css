@@ -21,6 +21,8 @@ h3 {
   --book-bg-color: hsl(39, 47%, 94%);
   --footer-bg-color: hsl(260, 25%, 66%);
 
+  --book-box-shadow: 2px 2px 2px 2px grey;
+
   --container-children-padding: 5px 15px;
 
   /*Custom checkbox slider*/
@@ -30,8 +32,6 @@ h3 {
   --form-switch-padding: 6px; /*Keep this an even number*/
   --slider-start-position-left: 3px; /*keep start positions as 1/2 of padding for even look*/
   --slider-start-postition-bottom: 3px; /*Can change but will result in non-centered slider*/
-
-  --book-box-shadow: 2px 2px 2px 2px grey;
 }
 
 /*Checkbox styling*/
