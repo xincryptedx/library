@@ -302,7 +302,7 @@ body {
   height: 25px;
   width: 25px;
   border-radius: 5px;
-  border: none;
+  border: 1px solid grey;
   align-self: end;
   justify-self: start;
 }
