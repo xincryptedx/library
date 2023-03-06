@@ -281,15 +281,20 @@ body {
 .content .book .pages {
   grid-area: pages;
   font-size: 0.9rem;
+  align-self: end;
 }
 
 .content .book label.has-read {
   grid-area: read-label;
   font-size: 0.9rem;
+  justify-self: end;
+  align-self: end;
 }
 
 .content .book .switch {
   grid-area: read-switch;
+  justify-self: end;
+  align-self: end;
 }
 
 .content .book .remove-btn {
