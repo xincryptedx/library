@@ -44,6 +44,11 @@ function removeBookFromLibrary(book, bookDiv) {
   }
 }
 
+function setBookRead(event, bookId) {
+  const book = myLibrary.find((foundBook) => foundBook.id === bookId);
+  book.hasRead = event.target.checked;
+}
+
 function loadLibrary() {
   myLibrary.forEach((book) => {
     const bookDiv = document.querySelector(`[data-bookid="${book.id}"]`);
@@ -86,6 +91,9 @@ function loadLibrary() {
     newHasReadCheckbox.classList.add("has-read");
     newHasReadCheckbox.setAttribute("type", "checkbox");
     newHasReadCheckbox.checked = book.hasRead;
+    newHasReadCheckbox.addEventListener("change", (e) =>
+      setBookRead(e, book.id)
+    );
     newHasReadSwitch.appendChild(newHasReadCheckbox);
 
     const newHasReadSpan = document.createElement("span");
