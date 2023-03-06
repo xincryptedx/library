@@ -14,12 +14,13 @@ h3 {
 
 /*Variables*/
 :root {
-  --header-bg-color: hsl(290, 87%, 20%);
-  --header-color: hsl(39, 47%, 94%);
+  --header-bg-color: hsl(290, 100%, 33%);
+  --header-color: hsl(0, 0%, 100%);
   --form-bg-color: hsl(39, 47%, 94%);
   --content-bg-color: hsl(210, 4%, 71%);
   --book-bg-color: hsl(39, 47%, 94%);
-  --footer-bg-color: hsl(260, 25%, 66%);
+  --footer-bg-color: hsl(290, 100%, 33%);
+  --footer-color: hsl(0, 0%, 100%);
 
   --book-box-shadow: 2px 2px 2px 2px grey;
 
@@ -310,6 +311,7 @@ body {
 .footer {
   grid-area: footer;
   background-color: var(--footer-bg-color);
+  color: var(--footer-color);
   display: flex;
   justify-content: center;
   align-content: center;
