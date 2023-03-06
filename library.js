@@ -94,6 +94,7 @@ function loadLibrary() {
 
     const newRemoveButton = document.createElement("button");
     newRemoveButton.classList.add("remove-btn");
+    newRemoveButton.innerHTML = "x";
     newBookDiv.appendChild(newRemoveButton);
     newRemoveButton.addEventListener("click", () =>
       removeBookFromLibrary(book, newBookDiv)
