@@ -14,16 +14,16 @@ h3 {
 
 /*Variables*/
 :root {
-  --a-color: hsl(51, 88%, 66%);
+  --a-color: hsl(187, 88%, 66%);
   --a-active-color: hsl(0, 0%, 50%);
 
   --header-bg-color: hsl(290, 100%, 33%);
-  --header-color: hsl(0, 0%, 100%);
+  --header-color: hsl(54, 87%, 78%);
   --form-bg-color: hsl(39, 47%, 94%);
   --content-bg-color: hsl(290, 75%, 90%);
   --book-bg-color: hsl(39, 47%, 94%);
   --footer-bg-color: hsl(290, 100%, 33%);
-  --footer-color: hsl(0, 0%, 100%);
+  --footer-color: hsl(54, 87%, 78%);
 
   --header-box-shadow: 0px 1px 1px 1px hsl(293, 47%, 34%);
   --content-box-shadow: 0px 1px 1px 1px hsl(293, 28%, 51%);
