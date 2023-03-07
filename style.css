@@ -19,9 +19,16 @@ h3 {
 
   --header-bg-color: hsl(290, 100%, 33%);
   --header-color: hsl(54, 87%, 78%);
+  --switch-checked-bg-color: hsl(290, 100%, 33%);
+  --switch-unchecked-bg-color: hsl(290, 100%, 93%);
+  --slider-bg-color: hsl(0, 0%, 100%);
+
   --form-bg-color: hsl(39, 47%, 94%);
+
   --content-bg-color: hsl(290, 75%, 90%);
   --book-bg-color: hsl(39, 47%, 94%);
+  --book-title-color: hsl(290, 100%, 33%);
+
   --footer-bg-color: hsl(290, 100%, 33%);
   --footer-color: hsl(54, 87%, 78%);
 
@@ -65,7 +72,7 @@ input[type="checkbox"] {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #ccc;
+  background-color: var(--switch-unchecked-bg-color);
   -webkit-transition: var(--switch-transition-time);
   transition: var(--switch-transition-time);
   border-radius: 15px;
@@ -78,18 +85,18 @@ input[type="checkbox"] {
   aspect-ratio: 1/1;
   left: var(--slider-start-position-left);
   bottom: var(--slider-start-postition-bottom);
-  background-color: white;
+  background-color: var(--slider-bg-color);
   -webkit-transition: var(--switch-transition-time);
   transition: var(--switch-transition-time);
   border-radius: 15px;
 }
 
 input:checked + .slider {
-  background-color: #2196f3;
+  background-color: var(--switch-checked-bg-color);
 }
 
 input:focus + .slider {
-  box-shadow: 0 0 1px #2196f3;
+  box-shadow: 0 0 2px var(--switch-checked-bg-color);
 }
 
 input:checked + .slider:before {
@@ -307,6 +314,7 @@ body {
 
 .content .book .title {
   grid-area: title;
+  color: var(--book-title-color);
   border-bottom: 1px solid black;
   align-self: end;
 }
