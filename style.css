@@ -113,7 +113,7 @@ body {
 
 .container {
   display: grid;
-  grid-template: min-content min-content 6fr min-content / 1fr;
+  grid-template: min-content min-content 1fr min-content / 1fr;
   grid-template-areas:
     "header"
     "add-form"
@@ -161,10 +161,16 @@ body {
 .header .total-books {
   grid-area: total-books;
   justify-self: end;
+  align-self: end;
+  font-weight: bold;
 }
 
 .header .book-search {
   grid-area: search;
+}
+
+.header .book-search {
+  font-weight: bold;
 }
 
 .header .book-search input {
