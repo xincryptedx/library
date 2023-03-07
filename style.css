@@ -20,7 +20,7 @@ h3 {
   --header-bg-color: hsl(290, 100%, 33%);
   --header-color: hsl(0, 0%, 100%);
   --form-bg-color: hsl(39, 47%, 94%);
-  --content-bg-color: hsl(210, 4%, 71%);
+  --content-bg-color: hsl(290, 75%, 90%);
   --book-bg-color: hsl(39, 47%, 94%);
   --footer-bg-color: hsl(290, 100%, 33%);
   --footer-color: hsl(0, 0%, 100%);
@@ -28,6 +28,9 @@ h3 {
   --book-box-shadow: 2px 2px 2px 2px grey;
 
   --container-children-padding: 5px 15px;
+
+  --add-form-button-width: 75px;
+  --add-form-button-height: 35px;
 
   /*Custom checkbox slider*/
   --switch-transition-time: 0.4s;
@@ -160,8 +163,8 @@ body {
 
 .header .add-btn {
   grid-area: add-btn;
-  width: 100px;
-  height: 50px;
+  width: var(--add-form-button-width);
+  height: var(--add-form-button-height);
   justify-self: end;
 }
 
@@ -201,8 +204,8 @@ body {
 .add-form .close-btn {
   grid-area: close-btn;
   justify-self: end;
-  width: 100px;
-  height: 50px;
+  width: var(--add-form-button-width);
+  height: var(--add-form-button-height);
 }
 
 .add-form label.title {
