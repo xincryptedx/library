@@ -412,6 +412,22 @@ body {
   body {
     width: 70vw;
   }
+
+  .add-form.show {
+    grid-template: min-content 1fr 1.5fr / min-content 1fr min-content 1fr min-content;
+    grid-template-areas:
+      "legend legend close-btn close-btn close-btn"
+      "title-lab title author-lab author ."
+      "pages-lab pages has-read-lab has-read submit-btn";
+  }
+
+  .add-form input[type="text"],
+  .add-form input[type="tel"] {
+    max-width: 15ch;
+  }
+
+  .add-form .submit-book-btn {
+  }
 }
 
 @media (min-width: 1200px) {
@@ -422,6 +438,6 @@ body {
   }
 
   body {
-    width: 50vw;
+    width: 60vw;
   }
 }
