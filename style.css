@@ -377,9 +377,15 @@ body {
   height: 25px;
   width: 25px;
   border-radius: 5px;
-  border: 1px solid grey;
+  border: 1px solid var(--button-border-color);
+  color: var(--book-title-color);
+  background-color: var(--content-bg-color);
   align-self: end;
   justify-self: start;
+}
+
+.content .book .remove-btn:active {
+  background-color: hsl(293, 28%, 51%);
 }
 
 .footer {
