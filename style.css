@@ -155,6 +155,7 @@ body {
 
 .header .title {
   grid-area: title;
+  font-size: 1.75rem;
 }
 
 .header .total-books {
