@@ -26,10 +26,11 @@ h3 {
   --footer-color: hsl(0, 0%, 100%);
 
   --header-box-shadow: 0px 1px 1px 1px hsl(293, 47%, 34%);
-  --content-box-shadow: 0px 1px 1px 1px hsl(293, 47%, 54%);
+  --content-box-shadow: 0px 1px 1px 1px hsl(293, 28%, 51%);
   --book-box-shadow: 2px 2px 2px 2px grey;
 
   --container-children-padding: 5px 15px;
+  --footer-padding: 5px 0px;
 
   --add-form-button-width: 75px;
   --add-form-button-height: 35px;
@@ -165,6 +166,10 @@ body {
   grid-area: search;
 }
 
+.header .book-search input {
+  background-color: var(--book-bg-color);
+}
+
 .header .add-btn {
   grid-area: add-btn;
   width: var(--add-form-button-width);
@@ -268,7 +273,8 @@ body {
   box-shadow: var(--content-box-shadow);
   background-color: var(--content-bg-color);
   padding: var(--container-children-padding);
-  overflow: scroll;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .content .book {
@@ -336,4 +342,5 @@ body {
   display: flex;
   justify-content: center;
   align-content: center;
+  padding: var(--footer-padding);
 }
