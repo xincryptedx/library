@@ -36,6 +36,15 @@ Book.prototype.generateUniqueId = function generateUniqueId() {
   return id;
 };
 
+const exampleBook = new Book({
+  title: "The Schools of Arcane Magic",
+  author: "Ansirem Runeweaver",
+  pages: 248,
+  hasRead: true,
+});
+
+myLibrary.push(exampleBook);
+
 //Functions
 function setTotalBooks() {
   totalBooksSpan.innerHTML = myLibrary.length;
@@ -116,6 +125,9 @@ function loadLibrary() {
     );
   });
 }
+
+//Load the library when the page loads
+loadLibrary();
 
 function addBookToLibrary(book) {
   myLibrary.push(book);
