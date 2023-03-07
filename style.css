@@ -116,6 +116,10 @@ a:active {
   color: var(--a-active-color);
 }
 
+html {
+  background-color: var(--content-bg-color);
+}
+
 body {
   height: 100vh;
   width: 100vw;
@@ -396,4 +400,28 @@ body {
   justify-content: center;
   align-content: center;
   padding: var(--footer-padding);
+}
+
+@media (min-width: 992px) {
+  html {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  body {
+    width: 70vw;
+  }
+}
+
+@media (min-width: 1200px) {
+  html {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  body {
+    width: 50vw;
+  }
 }
