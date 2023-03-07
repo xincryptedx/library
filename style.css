@@ -78,6 +78,7 @@ input[type="checkbox"] {
   -webkit-transition: var(--switch-transition-time);
   transition: var(--switch-transition-time);
   border-radius: 15px;
+  border: 1px solid var(--switch-checked-bg-color);
 }
 
 .slider:before {
