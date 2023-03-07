@@ -168,6 +168,11 @@ body {
 
 .header .book-search input {
   background-color: var(--book-bg-color);
+  border-style: none;
+  border-radius: 15px;
+  height: 1.75rem;
+  padding-left: 1ch;
+  padding-right: 5px;
 }
 
 .header .add-btn {
