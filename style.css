@@ -425,9 +425,6 @@ body {
   .add-form input[type="tel"] {
     max-width: 15ch;
   }
-
-  .add-form .submit-book-btn {
-  }
 }
 
 @media (min-width: 1200px) {
