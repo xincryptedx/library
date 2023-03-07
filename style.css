@@ -14,6 +14,9 @@ h3 {
 
 /*Variables*/
 :root {
+  --a-color: hsl(51, 88%, 66%);
+  --a-active-color: hsl(0, 0%, 50%);
+
   --header-bg-color: hsl(290, 100%, 33%);
   --header-color: hsl(0, 0%, 100%);
   --form-bg-color: hsl(39, 47%, 94%);
@@ -87,6 +90,14 @@ input:checked + .slider:before {
   -webkit-transform: translateX(calc(var(--form-switch-width) / 2));
   -ms-transform: translateX(calc(var(--form-switch-width) / 2));
   transform: translateX(calc(var(--form-switch-width) / 2));
+}
+
+a,
+a:visited {
+  color: var(--a-color);
+}
+a:active {
+  color: var(--a-active-color);
 }
 
 body {
