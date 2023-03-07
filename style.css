@@ -19,10 +19,11 @@ h3 {
 
   --header-bg-color: hsl(290, 100%, 33%);
   --header-color: hsl(54, 87%, 78%);
+  --button-border-color: hsl(290, 100%, 50%);
+
   --switch-checked-bg-color: hsl(290, 100%, 33%);
   --switch-unchecked-bg-color: hsl(290, 100%, 93%);
   --slider-bg-color: hsl(0, 0%, 100%);
-
   --form-bg-color: hsl(39, 47%, 94%);
 
   --content-bg-color: hsl(290, 75%, 90%);
@@ -193,6 +194,9 @@ body {
   height: var(--add-form-button-height);
   justify-self: end;
   align-self: end;
+  border-radius: 15px;
+  border: 3px solid var(--button-border-color);
+  background-color: var(--content-bg-color);
 }
 
 .add-form {
@@ -233,6 +237,9 @@ body {
   justify-self: end;
   width: var(--add-form-button-width);
   height: var(--add-form-button-height);
+  border-radius: 15px;
+  border: 3px solid var(--button-border-color);
+  background-color: var(--content-bg-color);
 }
 
 .add-form label.title {
