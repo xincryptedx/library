@@ -196,12 +196,14 @@ body {
   align-self: end;
   border-radius: 15px;
   border: 2px solid var(--button-border-color);
+  color: var(--book-title-color);
   background-color: var(--content-bg-color);
 }
 
 .add-form {
   grid-area: add-form;
   overflow: hidden;
+  color: var(--book-title-color);
   background-color: var(--form-bg-color);
   height: 0;
 }
@@ -239,6 +241,7 @@ body {
   height: var(--add-form-button-height);
   border-radius: 15px;
   border: 2px solid var(--button-border-color);
+  color: var(--book-title-color);
   background-color: var(--content-bg-color);
 }
 
@@ -293,6 +296,7 @@ body {
 .add-form .submit-book-btn {
   grid-area: submit-btn;
   border: 2px solid var(--button-border-color);
+  color: var(--book-title-color);
   background-color: var(--content-bg-color);
   border-radius: 15px;
   width: 200px;
