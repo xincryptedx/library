@@ -138,6 +138,7 @@ submitBookBtn.addEventListener("click", (e) => {
       hasRead: hasReadInput.checked,
     });
     addBookToLibrary(newBook);
+    addForm.reset();
   } else {
     addForm.reportValidity();
   }
