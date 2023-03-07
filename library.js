@@ -1,6 +1,7 @@
 //References
 const header = document.querySelector(".header");
 const addBtn = document.querySelector(".add-btn");
+const totalBooksSpan = document.querySelector(".total-books .total");
 
 const addFormDiv = document.querySelector(".add-form");
 const addForm = document.querySelector(".add-form form");
@@ -36,11 +37,16 @@ Book.prototype.generateUniqueId = function generateUniqueId() {
 };
 
 //Functions
+function setTotalBooks() {
+  totalBooksSpan.innerHTML = myLibrary.length;
+}
+
 function removeBookFromLibrary(book, bookDiv) {
   const bookIndex = myLibrary.indexOf(book);
   if (bookIndex !== -1) {
     myLibrary.splice(bookIndex, 1);
     bookDiv.remove();
+    setTotalBooks();
   }
 }
 
@@ -50,6 +56,7 @@ function setBookRead(event, bookId) {
 }
 
 function loadLibrary() {
+  setTotalBooks();
   myLibrary.forEach((book) => {
     const bookDiv = document.querySelector(`[data-bookid="${book.id}"]`);
     if (bookDiv) {
