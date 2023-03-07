@@ -167,10 +167,8 @@ body {
 
 .header .book-search {
   grid-area: search;
-}
-
-.header .book-search {
   font-weight: bold;
+  align-self: end;
 }
 
 .header .book-search input {
@@ -187,6 +185,7 @@ body {
   width: var(--add-form-button-width);
   height: var(--add-form-button-height);
   justify-self: end;
+  align-self: end;
 }
 
 .add-form {
