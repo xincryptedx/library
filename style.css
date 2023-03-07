@@ -25,6 +25,8 @@ h3 {
   --footer-bg-color: hsl(290, 100%, 33%);
   --footer-color: hsl(0, 0%, 100%);
 
+  --header-box-shadow: 0px 1px 1px 1px hsl(293, 47%, 34%);
+  --content-box-shadow: 0px 1px 1px 1px hsl(293, 47%, 54%);
   --book-box-shadow: 2px 2px 2px 2px grey;
 
   --container-children-padding: 5px 15px;
@@ -129,7 +131,9 @@ body {
     "title total-books"
     "search add-btn";
   align-items: center;
+  z-index: 2;
 
+  box-shadow: var(--header-box-shadow);
   background-color: var(--header-bg-color);
   color: var(--header-color);
   padding: var(--container-children-padding);
@@ -259,6 +263,9 @@ body {
   grid-template-columns: repeat(auto-fill, minmax(min(10rem, 100%), 1fr));
   grid-auto-rows: minmax(min-content, 33%);
   gap: 15px;
+  z-index: 1;
+
+  box-shadow: var(--content-box-shadow);
   background-color: var(--content-bg-color);
   padding: var(--container-children-padding);
   overflow: scroll;
